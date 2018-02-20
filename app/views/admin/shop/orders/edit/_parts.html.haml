@@ -1,9 +1,0 @@
-#tab_control
-  #tabs.tabs
-    #tab_toolbar
-  #pages.pages
-    = hidden_field_tag 'page_part_index_field' #important
-    - @parts.each do |part|
-      .page{:id => "order_page_#{part}", 'data-caption'=>h(part)}
-        .part{:id => "order_part_#{part}"}
-          = render :partial => "admin/shop/orders/edit/parts/#{part}", :locals => { :f => f }

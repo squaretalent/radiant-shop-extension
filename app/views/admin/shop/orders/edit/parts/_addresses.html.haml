@@ -1,9 +1,0 @@
-%h3 Billing
-
-%div#billing
-  = render :partial => '/admin/shop/customers/edit/parts/address', :locals => { :address => @shop_order.billing }
-        
-%h3 Shipping
-
-%div#shipping
-  = render :partial => '/admin/shop/customers/edit/parts/address', :locals => { :address => @shop_order.shipping }

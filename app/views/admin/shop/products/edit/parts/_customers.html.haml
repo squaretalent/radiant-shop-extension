@@ -1,5 +1,0 @@
-%ul.customers
-  - @shop_product.customers.each do |customer|
-    %li
-      %h3= link_to customer.name, [:edit_admin, customer]
-      %span.email= customer.email

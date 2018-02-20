@@ -1,6 +1,0 @@
-- f.fields_for :page do |pf|
-  %tr
-    %th.label
-      = pf.label :layout_id, t('layout')
-    %td.field
-      = pf.collection_select :layout_id, Layout.all, :id, :name

@@ -1,3 +1,0 @@
-- if @shop_category.new_record?
-  - f.fields_for :page do |pf|
-    = pf.hidden_field :status_id,:value => Status[Radiant::Config['defaults.page.status']].id

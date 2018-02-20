@@ -1,6 +1,0 @@
-- f.fields_for :page do |pf|
-  %tr
-    %th.label
-      = pf.label :parent_id, t('category')
-    %td.field
-      = pf.collection_select :parent_id, ShopCategory.all, :page_id, :name
